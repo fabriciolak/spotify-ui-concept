@@ -8,12 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      gridTemplateColumns: {
+        'main': '240px 1fr'
       },
-    },
+      colors: {
+        green: {
+          500: 'hsla(160, 84%, 39%, 1)'
+        },
+        gray: {
+          50: 'hsla(210, 20%, 98%, 1)',
+          100: 'hsla(220, 14%, 96%, 1)',
+          200: 'hsla(220, 13%, 91%, 1)',
+          500: 'hsla(220, 9%, 46%, 1)',
+          900: 'hsla(221, 39%, 11%, 1)',
+        }
+      }
+    }
   },
   plugins: [],
 }
