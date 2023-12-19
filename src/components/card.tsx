@@ -11,7 +11,7 @@ export function Card({ src, alt, contentTitle, contentBody }: CardProps) {
   return (
     <div className='flex w-[188px] flex-col gap-4 rounded bg-gray-50 p-4'>
       <div>
-        <Image src={src} alt={alt} width={156} height={156} />
+        <Image src={src} alt={alt} width={156} height={156} quality={60} />
       </div>
       <div className='space-y-1'>
         <h3 className='truncate text-base font-bold text-gray-900'>

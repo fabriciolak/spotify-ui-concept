@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        'main': '240px 1fr'
+        'main': '240px 1fr',
+        'footer': '240px 1fr',
       },
       colors: {
         green: {
@@ -19,7 +20,9 @@ const config: Config = {
           50: 'hsla(210, 20%, 98%, 1)',
           100: 'hsla(220, 14%, 96%, 1)',
           200: 'hsla(220, 13%, 91%, 1)',
+          400: 'hsla(218, 11%, 65%, 1)',
           500: 'hsla(220, 9%, 46%, 1)',
+          700: 'hsla(217, 19%, 27%, 1)',
           900: 'hsla(221, 39%, 11%, 1)',
         }
       }

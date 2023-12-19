@@ -4,16 +4,17 @@ import { SectionTitle } from '@/components/section-title'
 import { Card } from '@/components/card'
 import { playlists } from '@/mock/playlists'
 import { ScrollArea, ScrollBar } from '@/components/scroll-area'
+import { Player } from '@/components/player'
 
 export default function Home() {
   return (
     <div className='flex min-h-screen flex-col'>
-      <div className='flex w-full flex-1'>
+      <div className='flex w-full'>
         {/* Nav */}
         <aside
           role='navigation'
           aria-label='Aside'
-          className='flex w-[240px] flex-col bg-gray-100 px-2'
+          className='flex min-w-[240px] flex-col bg-gray-100 px-2'
         >
           <div className='mb-5 ml-6 mt-6' role='img'>
             <Image
@@ -175,7 +176,9 @@ export default function Home() {
             </button>
           </div>
         </aside>
+
         <div className='w-[1px] bg-gray-200' />
+
         {/* Main */}
         <main aria-label='Main' className='overflow-x-hidden pl-9 pr-0 pt-4'>
           <nav
@@ -230,7 +233,7 @@ export default function Home() {
             <button
               type='button'
               aria-label='User profile menu'
-              className='flex cursor-pointer items-center justify-center gap-2 rounded-full bg-gray-100 px-0.5 py-0.5 pr-[6px]'
+              className='flex cursor-pointer items-center justify-center gap-2 rounded-full bg-gray-100 px-0.5 py-0.5 sm:5pr-[6px]'
             >
               <Image
                 src='/Avatar.png'
@@ -238,8 +241,10 @@ export default function Home() {
                 height={28}
                 alt='Profile picture'
               />
-              <span className='text-sm font-medium text-gray-900'>Tom</span>
-              <div>
+              <span className='hidden text-sm font-medium text-gray-900 sm:flex'>
+                Tom
+              </span>
+              <div className='hidden sm:flex'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='16'
@@ -296,7 +301,9 @@ export default function Home() {
       </div>
 
       {/* Player */}
-      <div className='h-[88px]'>Player</div>
+      <div className='h-[88px]'>
+        <Player />
+      </div>
     </div>
   )
 }
