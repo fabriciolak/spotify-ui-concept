@@ -9,7 +9,7 @@ import { Player } from '@/components/player'
 export default function Home() {
   return (
     <div className='flex min-h-screen flex-col'>
-      <div className='flex w-full'>
+      <div className='flex h-full w-full flex-1'>
         {/* Nav */}
         <aside
           role='navigation'
@@ -233,7 +233,7 @@ export default function Home() {
             <button
               type='button'
               aria-label='User profile menu'
-              className='flex cursor-pointer items-center justify-center gap-2 rounded-full bg-gray-100 px-0.5 py-0.5 sm:5pr-[6px]'
+              className='sm:5pr-[6px] flex cursor-pointer items-center justify-center gap-2 rounded-full bg-gray-100 px-0.5 py-0.5'
             >
               <Image
                 src='/Avatar.png'

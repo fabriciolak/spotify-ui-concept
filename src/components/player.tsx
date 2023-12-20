@@ -13,7 +13,7 @@ import {
 
 export function Player() {
   return (
-    <div className='sm:grid-cols-footer grid grid-cols-1 lg:grid-cols-3'>
+    <div className='grid grid-cols-1 sm:grid-cols-footer lg:grid-cols-3'>
       <div
         role='contentinfo'
         aria-label='Playing In My Feelings by Drake'
@@ -90,7 +90,7 @@ export function Player() {
         </div>
       </div>
 
-      <div className='hidden w-full items-center justify-end lg:flex'>
+      <div className='hidden w-full items-center justify-end pr-4 lg:flex'>
         <div className='flex gap-2'>
           <button
             type='button'
